@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'simple-angular-calculator';
+  title = 'Aplicación de Calculadora';
+  operatorA: number = 0;
+  operatorB: number = 0;
+  result: number = 0;
+
+
+  addFunction():void{
+    this.result = this.operatorA + this.operatorB;
+  }
+
+  
 }
