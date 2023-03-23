@@ -1,0 +1,17 @@
+  <form class="me-sm-0 p-1">
+    <div class="form-group">
+      <label>Operador A</label>
+      <input type="number" class="form-control" placeholder="Escribe un numero" [(ngModel)]="operatorA"
+        name="operatorA" />
+    </div>
+    <div class="form-group">
+      <label>Operador B</label>
+      <input type="number" class="form-control" placeholder="Escribe un numero" [(ngModel)]="operatorB"
+        name="operatorB" />
+    </div>
+    <div class="btn">
+      <button type="submit" class="btn btn-primary" (click)="addFunction()">
+        Sumar
+      </button>
+    </div>
+  </form>

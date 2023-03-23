@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {
+  Component
+} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Aplicación de Calculadora';
-  operatorA: number = 0;
-  operatorB: number = 0;
-  result: number = 0;
 
+  parentResult: number;
 
-  addFunction():void{
-    this.result = this.operatorA + this.operatorB;
+  resultProcess(result: number) {
+    this.parentResult = result;
   }
-
-  
 }
